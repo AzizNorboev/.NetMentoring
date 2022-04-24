@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "xmckIKeeQ7B+WKSlPUrOhkoHxdQ/YYkYMSQu/zUp9HQNj+sEuouf+bkBYbAvWdGDmOzNfMbeZJGJqc9mYeTXug==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\Aziz_Norboev\\Documents\\GitHub\\.NetMentoring\\Module4_Advanced_Csharp\\TravarseTreeOfFolders\\TraverseTreeOfFolders.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Aziz_Norboev\\.nuget\\packages\\microsoft.netcore.app.host.win-x64\\5.0.13\\microsoft.netcore.app.host.win-x64.5.0.13.nupkg.sha512"
+  ],
+  "logs": []
+}

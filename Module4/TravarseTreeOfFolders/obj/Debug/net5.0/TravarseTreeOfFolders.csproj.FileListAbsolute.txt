@@ -1,0 +1,16 @@
+C:\Users\Aziz_Norboev\Documents\GitHub\.NetMentoring\Module4_Advanced_Csharp\TravarseTreeOfFolders\bin\Debug\net5.0\TravarseTreeOfFolders.exe
+C:\Users\Aziz_Norboev\Documents\GitHub\.NetMentoring\Module4_Advanced_Csharp\TravarseTreeOfFolders\bin\Debug\net5.0\TravarseTreeOfFolders.deps.json
+C:\Users\Aziz_Norboev\Documents\GitHub\.NetMentoring\Module4_Advanced_Csharp\TravarseTreeOfFolders\bin\Debug\net5.0\TravarseTreeOfFolders.runtimeconfig.json
+C:\Users\Aziz_Norboev\Documents\GitHub\.NetMentoring\Module4_Advanced_Csharp\TravarseTreeOfFolders\bin\Debug\net5.0\TravarseTreeOfFolders.runtimeconfig.dev.json
+C:\Users\Aziz_Norboev\Documents\GitHub\.NetMentoring\Module4_Advanced_Csharp\TravarseTreeOfFolders\bin\Debug\net5.0\TravarseTreeOfFolders.dll
+C:\Users\Aziz_Norboev\Documents\GitHub\.NetMentoring\Module4_Advanced_Csharp\TravarseTreeOfFolders\bin\Debug\net5.0\ref\TravarseTreeOfFolders.dll
+C:\Users\Aziz_Norboev\Documents\GitHub\.NetMentoring\Module4_Advanced_Csharp\TravarseTreeOfFolders\bin\Debug\net5.0\TravarseTreeOfFolders.pdb
+C:\Users\Aziz_Norboev\Documents\GitHub\.NetMentoring\Module4_Advanced_Csharp\TravarseTreeOfFolders\obj\Debug\net5.0\TravarseTreeOfFolders.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Aziz_Norboev\Documents\GitHub\.NetMentoring\Module4_Advanced_Csharp\TravarseTreeOfFolders\obj\Debug\net5.0\TravarseTreeOfFolders.AssemblyInfoInputs.cache
+C:\Users\Aziz_Norboev\Documents\GitHub\.NetMentoring\Module4_Advanced_Csharp\TravarseTreeOfFolders\obj\Debug\net5.0\TravarseTreeOfFolders.AssemblyInfo.cs
+C:\Users\Aziz_Norboev\Documents\GitHub\.NetMentoring\Module4_Advanced_Csharp\TravarseTreeOfFolders\obj\Debug\net5.0\TravarseTreeOfFolders.csproj.CoreCompileInputs.cache
+C:\Users\Aziz_Norboev\Documents\GitHub\.NetMentoring\Module4_Advanced_Csharp\TravarseTreeOfFolders\obj\Debug\net5.0\TravarseTreeOfFolders.dll
+C:\Users\Aziz_Norboev\Documents\GitHub\.NetMentoring\Module4_Advanced_Csharp\TravarseTreeOfFolders\obj\Debug\net5.0\ref\TravarseTreeOfFolders.dll
+C:\Users\Aziz_Norboev\Documents\GitHub\.NetMentoring\Module4_Advanced_Csharp\TravarseTreeOfFolders\obj\Debug\net5.0\TravarseTreeOfFolders.pdb
+C:\Users\Aziz_Norboev\Documents\GitHub\.NetMentoring\Module4_Advanced_Csharp\TravarseTreeOfFolders\obj\Debug\net5.0\TravarseTreeOfFolders.genruntimeconfig.cache
+C:\Users\Aziz_Norboev\Documents\GitHub\.NetMentoring\Module4_Advanced_Csharp\TravarseTreeOfFolders\obj\Debug\net5.0\TravarseTreeOfFolders.csproj.AssemblyReference.cache
