@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "ZYQnBrLfrlgL1tNtTtD8O3EP0NUAZPEoq6kvYqrgcJLQVhwJdzSZeKNnCIJqilvQ+5KkxgEI0OYEmaKTyW+fcQ==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\Aziz_Norboev\\Desktop\\module4Examples\\EventDelegate\\Observer\\Observer.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Aziz_Norboev\\.nuget\\packages\\microsoft.netcore.app.host.win-x64\\5.0.13\\microsoft.netcore.app.host.win-x64.5.0.13.nupkg.sha512"
+  ],
+  "logs": []
+}

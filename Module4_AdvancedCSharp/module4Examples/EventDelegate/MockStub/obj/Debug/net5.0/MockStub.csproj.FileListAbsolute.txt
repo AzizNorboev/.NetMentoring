@@ -1,0 +1,15 @@
+C:\Users\Aziz_Norboev\Desktop\module4Examples\EventDelegate\MockStub\bin\Debug\net5.0\MockStub.exe
+C:\Users\Aziz_Norboev\Desktop\module4Examples\EventDelegate\MockStub\bin\Debug\net5.0\MockStub.deps.json
+C:\Users\Aziz_Norboev\Desktop\module4Examples\EventDelegate\MockStub\bin\Debug\net5.0\MockStub.runtimeconfig.json
+C:\Users\Aziz_Norboev\Desktop\module4Examples\EventDelegate\MockStub\bin\Debug\net5.0\MockStub.runtimeconfig.dev.json
+C:\Users\Aziz_Norboev\Desktop\module4Examples\EventDelegate\MockStub\bin\Debug\net5.0\MockStub.dll
+C:\Users\Aziz_Norboev\Desktop\module4Examples\EventDelegate\MockStub\bin\Debug\net5.0\ref\MockStub.dll
+C:\Users\Aziz_Norboev\Desktop\module4Examples\EventDelegate\MockStub\bin\Debug\net5.0\MockStub.pdb
+C:\Users\Aziz_Norboev\Desktop\module4Examples\EventDelegate\MockStub\obj\Debug\net5.0\MockStub.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Aziz_Norboev\Desktop\module4Examples\EventDelegate\MockStub\obj\Debug\net5.0\MockStub.AssemblyInfoInputs.cache
+C:\Users\Aziz_Norboev\Desktop\module4Examples\EventDelegate\MockStub\obj\Debug\net5.0\MockStub.AssemblyInfo.cs
+C:\Users\Aziz_Norboev\Desktop\module4Examples\EventDelegate\MockStub\obj\Debug\net5.0\MockStub.csproj.CoreCompileInputs.cache
+C:\Users\Aziz_Norboev\Desktop\module4Examples\EventDelegate\MockStub\obj\Debug\net5.0\MockStub.dll
+C:\Users\Aziz_Norboev\Desktop\module4Examples\EventDelegate\MockStub\obj\Debug\net5.0\ref\MockStub.dll
+C:\Users\Aziz_Norboev\Desktop\module4Examples\EventDelegate\MockStub\obj\Debug\net5.0\MockStub.pdb
+C:\Users\Aziz_Norboev\Desktop\module4Examples\EventDelegate\MockStub\obj\Debug\net5.0\MockStub.genruntimeconfig.cache

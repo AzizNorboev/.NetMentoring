@@ -1,0 +1,15 @@
+C:\Users\Aziz_Norboev\Desktop\module4Examples\EventDelegate\IObservableDocumentation\bin\Debug\net5.0\IObservableDocumentation.exe
+C:\Users\Aziz_Norboev\Desktop\module4Examples\EventDelegate\IObservableDocumentation\bin\Debug\net5.0\IObservableDocumentation.deps.json
+C:\Users\Aziz_Norboev\Desktop\module4Examples\EventDelegate\IObservableDocumentation\bin\Debug\net5.0\IObservableDocumentation.runtimeconfig.json
+C:\Users\Aziz_Norboev\Desktop\module4Examples\EventDelegate\IObservableDocumentation\bin\Debug\net5.0\IObservableDocumentation.runtimeconfig.dev.json
+C:\Users\Aziz_Norboev\Desktop\module4Examples\EventDelegate\IObservableDocumentation\bin\Debug\net5.0\IObservableDocumentation.dll
+C:\Users\Aziz_Norboev\Desktop\module4Examples\EventDelegate\IObservableDocumentation\bin\Debug\net5.0\ref\IObservableDocumentation.dll
+C:\Users\Aziz_Norboev\Desktop\module4Examples\EventDelegate\IObservableDocumentation\bin\Debug\net5.0\IObservableDocumentation.pdb
+C:\Users\Aziz_Norboev\Desktop\module4Examples\EventDelegate\IObservableDocumentation\obj\Debug\net5.0\IObservableDocumentation.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Aziz_Norboev\Desktop\module4Examples\EventDelegate\IObservableDocumentation\obj\Debug\net5.0\IObservableDocumentation.AssemblyInfoInputs.cache
+C:\Users\Aziz_Norboev\Desktop\module4Examples\EventDelegate\IObservableDocumentation\obj\Debug\net5.0\IObservableDocumentation.AssemblyInfo.cs
+C:\Users\Aziz_Norboev\Desktop\module4Examples\EventDelegate\IObservableDocumentation\obj\Debug\net5.0\IObservableDocumentation.csproj.CoreCompileInputs.cache
+C:\Users\Aziz_Norboev\Desktop\module4Examples\EventDelegate\IObservableDocumentation\obj\Debug\net5.0\IObservableDocumentation.dll
+C:\Users\Aziz_Norboev\Desktop\module4Examples\EventDelegate\IObservableDocumentation\obj\Debug\net5.0\ref\IObservableDocumentation.dll
+C:\Users\Aziz_Norboev\Desktop\module4Examples\EventDelegate\IObservableDocumentation\obj\Debug\net5.0\IObservableDocumentation.pdb
+C:\Users\Aziz_Norboev\Desktop\module4Examples\EventDelegate\IObservableDocumentation\obj\Debug\net5.0\IObservableDocumentation.genruntimeconfig.cache

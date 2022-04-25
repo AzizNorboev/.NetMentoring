@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "8r5qtd3Uy0bfKQ0+j8pGKN+VgknU90/yUxMmsR+uciLn4bp/9tJv/cBh9h7y60LwnWA0/mJYgDaZgs2h7J3DUQ==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\Aziz_Norboev\\Desktop\\module4Examples\\EventDelegate\\covariance-and-contravariance1\\covariance-and-contravariance1.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Aziz_Norboev\\.nuget\\packages\\microsoft.netcore.app.host.win-x64\\5.0.13\\microsoft.netcore.app.host.win-x64.5.0.13.nupkg.sha512"
+  ],
+  "logs": []
+}

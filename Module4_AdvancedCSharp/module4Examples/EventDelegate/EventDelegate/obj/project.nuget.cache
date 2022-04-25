@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "DTbiEhJ+Tdi3qOJdkARUgTP9g8SyeAdTM5+ovGVkIwexwaEua+f8NsKz4HGqYJPt0Wm/w7mXxj9BRyK6Pf+PhQ==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\Aziz_Norboev\\Desktop\\module4Examples\\EventDelegate\\EventDelegate\\EventDelegate.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Aziz_Norboev\\.nuget\\packages\\microsoft.netcore.app.host.win-x64\\5.0.13\\microsoft.netcore.app.host.win-x64.5.0.13.nupkg.sha512"
+  ],
+  "logs": []
+}

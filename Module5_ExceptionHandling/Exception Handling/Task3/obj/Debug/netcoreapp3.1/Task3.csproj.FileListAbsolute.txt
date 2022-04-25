@@ -1,0 +1,10 @@
+D:\Downloads\Exception Handling\Task3\bin\Debug\netcoreapp3.1\Task3.deps.json
+D:\Downloads\Exception Handling\Task3\bin\Debug\netcoreapp3.1\Task3.dll
+D:\Downloads\Exception Handling\Task3\bin\Debug\netcoreapp3.1\Task3.pdb
+D:\Downloads\Exception Handling\Task3\obj\Debug\netcoreapp3.1\Task3.csproj.AssemblyReference.cache
+D:\Downloads\Exception Handling\Task3\obj\Debug\netcoreapp3.1\Task3.GeneratedMSBuildEditorConfig.editorconfig
+D:\Downloads\Exception Handling\Task3\obj\Debug\netcoreapp3.1\Task3.AssemblyInfoInputs.cache
+D:\Downloads\Exception Handling\Task3\obj\Debug\netcoreapp3.1\Task3.AssemblyInfo.cs
+D:\Downloads\Exception Handling\Task3\obj\Debug\netcoreapp3.1\Task3.csproj.CoreCompileInputs.cache
+D:\Downloads\Exception Handling\Task3\obj\Debug\netcoreapp3.1\Task3.dll
+D:\Downloads\Exception Handling\Task3\obj\Debug\netcoreapp3.1\Task3.pdb

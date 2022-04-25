@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "G6VYnIwPulY8KvSoPgJHQdjvmpv3RTcztmnDNsrKekAkqrI+ByP4GgNGAkTY9sgdx4ZBKFPtHYWpf+LBJECxHQ==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\Aziz_Norboev\\Desktop\\module4Examples\\EventDelegate\\MockStub\\MockStub.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Aziz_Norboev\\.nuget\\packages\\microsoft.netcore.app.host.win-x64\\5.0.13\\microsoft.netcore.app.host.win-x64.5.0.13.nupkg.sha512"
+  ],
+  "logs": []
+}

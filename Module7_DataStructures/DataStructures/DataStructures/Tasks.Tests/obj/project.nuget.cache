@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "4msqu+N/hsgdNhzxjuaeIyBMdUPsmK+GuyQwqSshWhcHBjDRfs0r2C5gSln1sE6LuB88NBVslPRGSuCr9HZzxA==",
+  "dgSpecHash": "PdsbbpehKw00RNAaePI83CQVNabWp70XuMZl0+fr/VoqRNlpytQEbEMnK7OKQvQHNSZEZC4ok6R2OS834NeH/A==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Aziz_Norboev\\Documents\\GitHub\\.NetMentoring\\Module7\\DataStructures\\DataStructures\\Tasks.Tests\\Tasks.Tests.csproj",
+  "projectFilePath": "C:\\Users\\Aziz_Norboev\\Documents\\GitHub\\.NetMentoring\\Module7_DataStructures\\DataStructures\\DataStructures\\Tasks.Tests\\Tasks.Tests.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Aziz_Norboev\\.nuget\\packages\\coverlet.collector\\1.3.0\\coverlet.collector.1.3.0.nupkg.sha512",
     "C:\\Users\\Aziz_Norboev\\.nuget\\packages\\fluentassertions\\5.10.3\\fluentassertions.5.10.3.nupkg.sha512",

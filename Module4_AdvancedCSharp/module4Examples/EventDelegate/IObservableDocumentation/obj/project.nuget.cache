@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "ULjbjX2PcAUFhOlizvxSPbWEWRnU7cZJsXx3WjLVkVeu2Fa+bq8uV9O4iOveFj2AXd60KV7MuwUh790McIsC0g==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\Aziz_Norboev\\Desktop\\module4Examples\\EventDelegate\\IObservableDocumentation\\IObservableDocumentation.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Aziz_Norboev\\.nuget\\packages\\microsoft.netcore.app.host.win-x64\\5.0.13\\microsoft.netcore.app.host.win-x64.5.0.13.nupkg.sha512"
+  ],
+  "logs": []
+}

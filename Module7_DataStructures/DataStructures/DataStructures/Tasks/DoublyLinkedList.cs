@@ -37,6 +37,7 @@ namespace Tasks
             {
                 throw new ArgumentOutOfRangeException("index");
             }
+            //add new head data
             else if (index == 0)
             {
                 newNode.Next = head;
@@ -49,45 +50,42 @@ namespace Tasks
                 {
                     head.Previous = newNode;
                 }
-
                 head = newNode;
+                Length++;
             }
+            // add new tail data
             else if (index == Length)
             {
-                if (tail == null)
-                {
-                    head = newNode;
-                }
-                else
-                {
-                    newNode.Previous = tail;
-                    tail.Next = newNode;
-                }
-
-                tail = newNode;
+                Add(newNode.Data);
             }
+            //if index is between 0 and last index
             else
             {
-                Node<T> backNode = head;
-                Node<T> forwardNode = tail;
+                GetIndexAndSaveData(index, newNode);
+                Length++;
+            }        
 
-                for (int i = -1; i < index - 2; i++)
+        }
+
+        public void GetIndexAndSaveData(int index, Node<T> newNode)
+        {
+            int currentIndex = 0;
+            var currentNode = head;
+            if (index >= 0)
+            {
+                while (currentNode != null && currentIndex <= index)
                 {
-                    backNode = backNode.Next;
+                    if (currentIndex == index)
+                    {
+                        newNode.Next = currentNode;
+                        newNode.Previous = currentNode.Previous;
+                        currentNode.Previous.Next = newNode;
+                        currentNode.Previous = newNode;
+                    }
+                    currentIndex++;
+                    currentNode = currentNode.Next;
                 }
-
-                for (int i = Length - 1; i > index; i--)
-                {
-                    forwardNode = forwardNode.Previous;
-                }
-
-                backNode.Next = newNode;
-                newNode.Previous = backNode;
-                newNode.Next = forwardNode;
-                forwardNode.Previous = newNode;
             }
-
-            Length++;
         }
 
         public T ElementAt(int index)
@@ -149,39 +147,37 @@ namespace Tasks
             {
                 throw new IndexOutOfRangeException();
             }
+            //removing head
             else if (index == 0)
             {
                 removedNode = head;
                 head = removedNode.Next;
                 head.Previous = null;
             }
+            //removing tail
             else if (index == Length - 1)
             {
                 removedNode = tail;
                 tail = removedNode.Previous;
                 tail.Next = null;
             }
+            //if index is between 0 and last index
             else
             {
-                Node<T> backNode = head;
-                Node<T> forwardNode = tail;
-                removedNode = backNode.Next;
-
-                for (int i = 0; i < index - 1; i++)
+                int currentIndex = 0;
+                var currentNode = head;
+                if (index >= 0)
                 {
-                    backNode = backNode.Next;
-                    removedNode = backNode.Next;
+                    while (currentNode != null && currentIndex <= index)
+                    {               
+                        if (currentIndex == index)
+                        {
+                            currentNode.Next.Previous = currentNode.Previous;
+                        }
+                        currentIndex--;
+                    }
                 }
-
-                for (int i = Length - 1; i > index + 1; i--)
-                {
-                    forwardNode = forwardNode.Previous;
-                }
-
-                backNode.Next = forwardNode;
-                forwardNode.Previous = backNode;
             }
-
             Length--;
             return removedNode.Data;
         }

@@ -1,0 +1,47 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v5.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v5.0": {
+      "ParseConsole/1.0.0": {
+        "dependencies": {
+          "Task2": "1.0.0",
+          "Task3": "1.0.0"
+        },
+        "runtime": {
+          "ParseConsole.dll": {}
+        }
+      },
+      "Task2/1.0.0": {
+        "runtime": {
+          "Task2.dll": {}
+        }
+      },
+      "Task3/1.0.0": {
+        "runtime": {
+          "Task3.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "ParseConsole/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Task2/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Task3/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

@@ -1,0 +1,16 @@
+C:\Users\Aziz_Norboev\Desktop\module4Examples\EventDelegate\EventDelegate\bin\Debug\net5.0\EventDelegate.exe
+C:\Users\Aziz_Norboev\Desktop\module4Examples\EventDelegate\EventDelegate\bin\Debug\net5.0\EventDelegate.deps.json
+C:\Users\Aziz_Norboev\Desktop\module4Examples\EventDelegate\EventDelegate\bin\Debug\net5.0\EventDelegate.runtimeconfig.json
+C:\Users\Aziz_Norboev\Desktop\module4Examples\EventDelegate\EventDelegate\bin\Debug\net5.0\EventDelegate.runtimeconfig.dev.json
+C:\Users\Aziz_Norboev\Desktop\module4Examples\EventDelegate\EventDelegate\bin\Debug\net5.0\EventDelegate.dll
+C:\Users\Aziz_Norboev\Desktop\module4Examples\EventDelegate\EventDelegate\bin\Debug\net5.0\ref\EventDelegate.dll
+C:\Users\Aziz_Norboev\Desktop\module4Examples\EventDelegate\EventDelegate\bin\Debug\net5.0\EventDelegate.pdb
+C:\Users\Aziz_Norboev\Desktop\module4Examples\EventDelegate\EventDelegate\obj\Debug\net5.0\EventDelegate.csproj.AssemblyReference.cache
+C:\Users\Aziz_Norboev\Desktop\module4Examples\EventDelegate\EventDelegate\obj\Debug\net5.0\EventDelegate.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Aziz_Norboev\Desktop\module4Examples\EventDelegate\EventDelegate\obj\Debug\net5.0\EventDelegate.AssemblyInfoInputs.cache
+C:\Users\Aziz_Norboev\Desktop\module4Examples\EventDelegate\EventDelegate\obj\Debug\net5.0\EventDelegate.AssemblyInfo.cs
+C:\Users\Aziz_Norboev\Desktop\module4Examples\EventDelegate\EventDelegate\obj\Debug\net5.0\EventDelegate.csproj.CoreCompileInputs.cache
+C:\Users\Aziz_Norboev\Desktop\module4Examples\EventDelegate\EventDelegate\obj\Debug\net5.0\EventDelegate.dll
+C:\Users\Aziz_Norboev\Desktop\module4Examples\EventDelegate\EventDelegate\obj\Debug\net5.0\ref\EventDelegate.dll
+C:\Users\Aziz_Norboev\Desktop\module4Examples\EventDelegate\EventDelegate\obj\Debug\net5.0\EventDelegate.pdb
+C:\Users\Aziz_Norboev\Desktop\module4Examples\EventDelegate\EventDelegate\obj\Debug\net5.0\EventDelegate.genruntimeconfig.cache

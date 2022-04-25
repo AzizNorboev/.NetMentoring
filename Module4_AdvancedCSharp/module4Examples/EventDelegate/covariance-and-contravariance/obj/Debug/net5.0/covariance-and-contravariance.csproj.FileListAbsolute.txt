@@ -1,0 +1,16 @@
+C:\Users\Aziz_Norboev\Desktop\module4Examples\EventDelegate\covariance-and-contravariance\bin\Debug\net5.0\covariance-and-contravariance.exe
+C:\Users\Aziz_Norboev\Desktop\module4Examples\EventDelegate\covariance-and-contravariance\bin\Debug\net5.0\covariance-and-contravariance.deps.json
+C:\Users\Aziz_Norboev\Desktop\module4Examples\EventDelegate\covariance-and-contravariance\bin\Debug\net5.0\covariance-and-contravariance.runtimeconfig.json
+C:\Users\Aziz_Norboev\Desktop\module4Examples\EventDelegate\covariance-and-contravariance\bin\Debug\net5.0\covariance-and-contravariance.runtimeconfig.dev.json
+C:\Users\Aziz_Norboev\Desktop\module4Examples\EventDelegate\covariance-and-contravariance\bin\Debug\net5.0\covariance-and-contravariance.dll
+C:\Users\Aziz_Norboev\Desktop\module4Examples\EventDelegate\covariance-and-contravariance\bin\Debug\net5.0\ref\covariance-and-contravariance.dll
+C:\Users\Aziz_Norboev\Desktop\module4Examples\EventDelegate\covariance-and-contravariance\bin\Debug\net5.0\covariance-and-contravariance.pdb
+C:\Users\Aziz_Norboev\Desktop\module4Examples\EventDelegate\covariance-and-contravariance\obj\Debug\net5.0\covariance-and-contravariance.csproj.AssemblyReference.cache
+C:\Users\Aziz_Norboev\Desktop\module4Examples\EventDelegate\covariance-and-contravariance\obj\Debug\net5.0\covariance-and-contravariance.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Aziz_Norboev\Desktop\module4Examples\EventDelegate\covariance-and-contravariance\obj\Debug\net5.0\covariance-and-contravariance.AssemblyInfoInputs.cache
+C:\Users\Aziz_Norboev\Desktop\module4Examples\EventDelegate\covariance-and-contravariance\obj\Debug\net5.0\covariance-and-contravariance.AssemblyInfo.cs
+C:\Users\Aziz_Norboev\Desktop\module4Examples\EventDelegate\covariance-and-contravariance\obj\Debug\net5.0\covariance-and-contravariance.csproj.CoreCompileInputs.cache
+C:\Users\Aziz_Norboev\Desktop\module4Examples\EventDelegate\covariance-and-contravariance\obj\Debug\net5.0\covariance-and-contravariance.dll
+C:\Users\Aziz_Norboev\Desktop\module4Examples\EventDelegate\covariance-and-contravariance\obj\Debug\net5.0\ref\covariance-and-contravariance.dll
+C:\Users\Aziz_Norboev\Desktop\module4Examples\EventDelegate\covariance-and-contravariance\obj\Debug\net5.0\covariance-and-contravariance.pdb
+C:\Users\Aziz_Norboev\Desktop\module4Examples\EventDelegate\covariance-and-contravariance\obj\Debug\net5.0\covariance-and-contravariance.genruntimeconfig.cache

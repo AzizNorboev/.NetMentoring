@@ -10,7 +10,12 @@
       "ProjectGuid": "60bb38d5-e2c3-4629-9fc5-6e87d0fcba4e",
       "DisplayName": "Tasks.Tests",
       "ColorIndex": 1
+    },
+    "ef431c39-8a02-4a16-81c2-336995dd0f42": {
+      "ProjectGuid": "ef431c39-8a02-4a16-81c2-336995dd0f42",
+      "DisplayName": "ConsoleApp1",
+      "ColorIndex": 2
     }
   },
-  "NextColorIndex": 2
+  "NextColorIndex": 3
 }

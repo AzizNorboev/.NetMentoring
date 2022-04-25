@@ -1,0 +1,56 @@
+{
+  "Version": 1,
+  "ProjectMap": {
+    "168d28c0-3270-403c-bcba-c6dc1ffea29e": {
+      "ProjectGuid": "168d28c0-3270-403c-bcba-c6dc1ffea29e",
+      "DisplayName": "EventDelegate",
+      "ColorIndex": 0
+    },
+    "bab6fede-77f2-4ae8-87ad-5fa8b4065270": {
+      "ProjectGuid": "bab6fede-77f2-4ae8-87ad-5fa8b4065270",
+      "DisplayName": "covariance-and-contravariance",
+      "ColorIndex": 1
+    },
+    "203b80ed-6179-4e20-94b8-de6032f44097": {
+      "ProjectGuid": "203b80ed-6179-4e20-94b8-de6032f44097",
+      "DisplayName": "covariance-and-contravariance1",
+      "ColorIndex": 2
+    },
+    "a2fe74e1-b743-11d0-ae1a-00a0c90fffc3": {
+      "ProjectGuid": "a2fe74e1-b743-11d0-ae1a-00a0c90fffc3",
+      "DisplayName": "Miscellaneous Files",
+      "ColorIndex": -1
+    },
+    "c26812b8-dfdd-401f-bc1e-60282fb2a3ec": {
+      "ProjectGuid": "c26812b8-dfdd-401f-bc1e-60282fb2a3ec",
+      "DisplayName": "CovarianceContravariance",
+      "ColorIndex": 3
+    },
+    "be2d79ec-5ba3-4cbe-9989-24fad88304ed": {
+      "ProjectGuid": "be2d79ec-5ba3-4cbe-9989-24fad88304ed",
+      "DisplayName": "Observer",
+      "ColorIndex": 4
+    },
+    "0571360d-2cc8-43e2-a0cd-0513b66c6fac": {
+      "ProjectGuid": "0571360d-2cc8-43e2-a0cd-0513b66c6fac",
+      "DisplayName": "IObservableDocumentation",
+      "ColorIndex": 5
+    },
+    "70c05895-2fc1-4dd8-9a6c-59d490d488f4": {
+      "ProjectGuid": "70c05895-2fc1-4dd8-9a6c-59d490d488f4",
+      "DisplayName": "MockStub",
+      "ColorIndex": 6
+    },
+    "86e3500b-0608-4ca3-a988-202c1df855dc": {
+      "ProjectGuid": "86e3500b-0608-4ca3-a988-202c1df855dc",
+      "DisplayName": "TestProject1",
+      "ColorIndex": 7
+    },
+    "686b1721-a6eb-44e7-8b7b-8adcbf9e68c2": {
+      "ProjectGuid": "686b1721-a6eb-44e7-8b7b-8adcbf9e68c2",
+      "DisplayName": "TestProject",
+      "ColorIndex": 8
+    }
+  },
+  "NextColorIndex": 9
+}
