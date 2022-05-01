@@ -1,0 +1,16 @@
+C:\Users\Aziz_Norboev\Documents\GitHub\.NetMentoring\Module8_UnitTesting\GameOfLife\DictionaryReplacerKata\bin\Debug\net5.0\DictionaryReplacerKata.exe
+C:\Users\Aziz_Norboev\Documents\GitHub\.NetMentoring\Module8_UnitTesting\GameOfLife\DictionaryReplacerKata\bin\Debug\net5.0\DictionaryReplacerKata.deps.json
+C:\Users\Aziz_Norboev\Documents\GitHub\.NetMentoring\Module8_UnitTesting\GameOfLife\DictionaryReplacerKata\bin\Debug\net5.0\DictionaryReplacerKata.runtimeconfig.json
+C:\Users\Aziz_Norboev\Documents\GitHub\.NetMentoring\Module8_UnitTesting\GameOfLife\DictionaryReplacerKata\bin\Debug\net5.0\DictionaryReplacerKata.runtimeconfig.dev.json
+C:\Users\Aziz_Norboev\Documents\GitHub\.NetMentoring\Module8_UnitTesting\GameOfLife\DictionaryReplacerKata\bin\Debug\net5.0\DictionaryReplacerKata.dll
+C:\Users\Aziz_Norboev\Documents\GitHub\.NetMentoring\Module8_UnitTesting\GameOfLife\DictionaryReplacerKata\bin\Debug\net5.0\DictionaryReplacerKata.pdb
+C:\Users\Aziz_Norboev\Documents\GitHub\.NetMentoring\Module8_UnitTesting\GameOfLife\DictionaryReplacerKata\obj\Debug\net5.0\DictionaryReplacerKata.csproj.AssemblyReference.cache
+C:\Users\Aziz_Norboev\Documents\GitHub\.NetMentoring\Module8_UnitTesting\GameOfLife\DictionaryReplacerKata\obj\Debug\net5.0\DictionaryReplacerKata.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Aziz_Norboev\Documents\GitHub\.NetMentoring\Module8_UnitTesting\GameOfLife\DictionaryReplacerKata\obj\Debug\net5.0\DictionaryReplacerKata.AssemblyInfoInputs.cache
+C:\Users\Aziz_Norboev\Documents\GitHub\.NetMentoring\Module8_UnitTesting\GameOfLife\DictionaryReplacerKata\obj\Debug\net5.0\DictionaryReplacerKata.AssemblyInfo.cs
+C:\Users\Aziz_Norboev\Documents\GitHub\.NetMentoring\Module8_UnitTesting\GameOfLife\DictionaryReplacerKata\obj\Debug\net5.0\DictionaryReplacerKata.csproj.CoreCompileInputs.cache
+C:\Users\Aziz_Norboev\Documents\GitHub\.NetMentoring\Module8_UnitTesting\GameOfLife\DictionaryReplacerKata\obj\Debug\net5.0\DictionaryReplacerKata.dll
+C:\Users\Aziz_Norboev\Documents\GitHub\.NetMentoring\Module8_UnitTesting\GameOfLife\DictionaryReplacerKata\obj\Debug\net5.0\refint\DictionaryReplacerKata.dll
+C:\Users\Aziz_Norboev\Documents\GitHub\.NetMentoring\Module8_UnitTesting\GameOfLife\DictionaryReplacerKata\obj\Debug\net5.0\DictionaryReplacerKata.pdb
+C:\Users\Aziz_Norboev\Documents\GitHub\.NetMentoring\Module8_UnitTesting\GameOfLife\DictionaryReplacerKata\obj\Debug\net5.0\DictionaryReplacerKata.genruntimeconfig.cache
+C:\Users\Aziz_Norboev\Documents\GitHub\.NetMentoring\Module8_UnitTesting\GameOfLife\DictionaryReplacerKata\obj\Debug\net5.0\ref\DictionaryReplacerKata.dll

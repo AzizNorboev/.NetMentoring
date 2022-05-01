@@ -1,0 +1,16 @@
+C:\Users\Aziz_Norboev\Documents\GitHub\.NetMentoring\Module8_UnitTesting\GameOfLife\FizzBuzzKata\bin\Debug\net5.0\FizzBuzzKata.exe
+C:\Users\Aziz_Norboev\Documents\GitHub\.NetMentoring\Module8_UnitTesting\GameOfLife\FizzBuzzKata\bin\Debug\net5.0\FizzBuzzKata.deps.json
+C:\Users\Aziz_Norboev\Documents\GitHub\.NetMentoring\Module8_UnitTesting\GameOfLife\FizzBuzzKata\bin\Debug\net5.0\FizzBuzzKata.runtimeconfig.json
+C:\Users\Aziz_Norboev\Documents\GitHub\.NetMentoring\Module8_UnitTesting\GameOfLife\FizzBuzzKata\bin\Debug\net5.0\FizzBuzzKata.runtimeconfig.dev.json
+C:\Users\Aziz_Norboev\Documents\GitHub\.NetMentoring\Module8_UnitTesting\GameOfLife\FizzBuzzKata\bin\Debug\net5.0\FizzBuzzKata.dll
+C:\Users\Aziz_Norboev\Documents\GitHub\.NetMentoring\Module8_UnitTesting\GameOfLife\FizzBuzzKata\bin\Debug\net5.0\FizzBuzzKata.pdb
+C:\Users\Aziz_Norboev\Documents\GitHub\.NetMentoring\Module8_UnitTesting\GameOfLife\FizzBuzzKata\obj\Debug\net5.0\FizzBuzzKata.csproj.AssemblyReference.cache
+C:\Users\Aziz_Norboev\Documents\GitHub\.NetMentoring\Module8_UnitTesting\GameOfLife\FizzBuzzKata\obj\Debug\net5.0\FizzBuzzKata.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Aziz_Norboev\Documents\GitHub\.NetMentoring\Module8_UnitTesting\GameOfLife\FizzBuzzKata\obj\Debug\net5.0\FizzBuzzKata.AssemblyInfoInputs.cache
+C:\Users\Aziz_Norboev\Documents\GitHub\.NetMentoring\Module8_UnitTesting\GameOfLife\FizzBuzzKata\obj\Debug\net5.0\FizzBuzzKata.AssemblyInfo.cs
+C:\Users\Aziz_Norboev\Documents\GitHub\.NetMentoring\Module8_UnitTesting\GameOfLife\FizzBuzzKata\obj\Debug\net5.0\FizzBuzzKata.csproj.CoreCompileInputs.cache
+C:\Users\Aziz_Norboev\Documents\GitHub\.NetMentoring\Module8_UnitTesting\GameOfLife\FizzBuzzKata\obj\Debug\net5.0\FizzBuzzKata.dll
+C:\Users\Aziz_Norboev\Documents\GitHub\.NetMentoring\Module8_UnitTesting\GameOfLife\FizzBuzzKata\obj\Debug\net5.0\refint\FizzBuzzKata.dll
+C:\Users\Aziz_Norboev\Documents\GitHub\.NetMentoring\Module8_UnitTesting\GameOfLife\FizzBuzzKata\obj\Debug\net5.0\FizzBuzzKata.pdb
+C:\Users\Aziz_Norboev\Documents\GitHub\.NetMentoring\Module8_UnitTesting\GameOfLife\FizzBuzzKata\obj\Debug\net5.0\FizzBuzzKata.genruntimeconfig.cache
+C:\Users\Aziz_Norboev\Documents\GitHub\.NetMentoring\Module8_UnitTesting\GameOfLife\FizzBuzzKata\obj\Debug\net5.0\ref\FizzBuzzKata.dll
