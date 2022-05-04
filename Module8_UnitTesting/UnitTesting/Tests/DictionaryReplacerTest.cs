@@ -9,7 +9,7 @@ namespace Tests
         [TestCaseSource(nameof(GetDictionaryEmpty))]
         [TestCaseSource(nameof(GetDictionaryCountOne))]
         [TestCaseSource(nameof(GetDictionaryCountTwo))]
-        public void ReplaceWordsCorrespondingValue_Returns_Replaced_Words(string input, Dictionary<string, string> dict, string expected)
+        public void ReplaceWordsCorrespondingValue_ValidArgument_ReturnsReplacedWords(string input, Dictionary<string, string> dict, string expected)
         {
             var dictionaryReplacer = new DictionaryReplacer();
             var actual = dictionaryReplacer.ReplaceWordsCorrespondingValue(input, dict);

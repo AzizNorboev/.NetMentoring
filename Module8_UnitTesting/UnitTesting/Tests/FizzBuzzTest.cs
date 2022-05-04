@@ -8,7 +8,7 @@ namespace Tests
         [TestCase(1, "1")]
         [TestCase(16, "16")]
         [TestCase(98, "98")]
-        public void CheckForFizzBuzz_PassedAndActualNumbersAreEqual(int num, string expected)
+        public void CheckForFizzBuzz_PassedAndActualNumbers_AreEqual(int num, string expected)
         {
             // Arrange
             var fizzBuzz = new FizzBuzz();

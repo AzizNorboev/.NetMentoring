@@ -73,7 +73,7 @@ namespace Tests
         }
 
         [TestCaseSource("TestCaseSourceData4x7Grid")]
-        public void DisplayGrid_4x7Grid_ThrowsException(int[,] grid, int x, int y)
+        public void DisplayGrid_InvalidGrid_ThrowsException(int[,] grid, int x, int y)
         {
             Assert.That(() => GameOfLife.LifeSimulation.DisplayGrid(grid, x, y), Throws.InvalidOperationException);
         }
@@ -106,7 +106,7 @@ namespace Tests
         }
 
         [TestCaseSource("TestCaseSourceData4x7Grid")]
-        public void PrintNextGeneration_4x7Grid_ThrowsException(int[,] grid, int x, int y)
+        public void PrintNextGeneration_InvalidGrid_ThrowsException(int[,] grid, int x, int y)
         {
             Assert.That(() => GameOfLife.LifeSimulation.PrintNextGeneration(grid, x, y), Throws.InvalidOperationException);
         }

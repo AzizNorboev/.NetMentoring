@@ -1,0 +1,10 @@
+C:\Users\Aziz_Norboev\Documents\GitHub\.NetMentoring\Module9_SqlFundamentals\SqlDbProject\SqlDbProject\bin\Debug\SqlDbProject.dacpac
+C:\Users\Aziz_Norboev\Documents\GitHub\.NetMentoring\Module9_SqlFundamentals\SqlDbProject\SqlDbProject\bin\Debug\SqlDbProject.dll
+C:\Users\Aziz_Norboev\Documents\GitHub\.NetMentoring\Module9_SqlFundamentals\SqlDbProject\SqlDbProject\bin\Debug\SqlDbProject.pdb
+C:\Users\Aziz_Norboev\Documents\GitHub\.NetMentoring\Module9_SqlFundamentals\SqlDbProject\SqlDbProject\obj\Debug\SqlDbProject.sqlproj.AssemblyReference.cache
+C:\Users\Aziz_Norboev\Documents\GitHub\.NetMentoring\Module9_SqlFundamentals\SqlDbProject\SqlDbProject\obj\Debug\SqlDbProject.dll
+C:\Users\Aziz_Norboev\Documents\GitHub\.NetMentoring\Module9_SqlFundamentals\SqlDbProject\SqlDbProject\obj\Debug\SqlDbProject.pdb
+C:\Users\Aziz_Norboev\Documents\GitHub\.NetMentoring\Module9_SqlFundamentals\SqlDbProject\SqlDbProject\obj\Debug\Model.xml
+C:\Users\Aziz_Norboev\Documents\GitHub\.NetMentoring\Module9_SqlFundamentals\SqlDbProject\SqlDbProject\obj\Debug\refactor.xml
+C:\Users\Aziz_Norboev\Documents\GitHub\.NetMentoring\Module9_SqlFundamentals\SqlDbProject\SqlDbProject\obj\Debug\postdeploy.sql
+C:\Users\Aziz_Norboev\Documents\GitHub\.NetMentoring\Module9_SqlFundamentals\SqlDbProject\SqlDbProject\obj\Debug\predeploy.sql
