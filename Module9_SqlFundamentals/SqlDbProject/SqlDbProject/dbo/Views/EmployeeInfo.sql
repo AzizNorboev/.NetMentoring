@@ -7,4 +7,4 @@ CREATE VIEW [dbo].[EmployeeInfo]
 	FROM Employee e
 	JOIN Person p on p.Id=e.PersonId
 	JOIN Address a on a.Id=e.AddressId
-	ORDER BY a.City
+	ORDER BY e.CompanyName, a.City asc;
