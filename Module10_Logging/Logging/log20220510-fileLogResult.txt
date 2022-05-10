@@ -1,0 +1,16 @@
+2022-05-10 16:13:17.036 +05:00 [INF] Index action is making response
+2022-05-10 16:13:22.515 +05:00 [INF] Index action is making response
+2022-05-10 16:13:24.017 +05:00 [DBG] Called Index method with parameter id: 2 from SessionController
+2022-05-10 16:13:24.037 +05:00 [DBG] Value of session is BrainstormSessions.Core.Model.BrainstormSession
+2022-05-10 16:33:54.714 +05:00 [INF] Index action is making response
+2022-05-10 16:33:57.668 +05:00 [INF] Index action is making response
+2022-05-10 16:34:01.687 +05:00 [DBG] Called Index method with parameter id: 2 from SessionController
+2022-05-10 16:34:01.704 +05:00 [DBG] Value of session is BrainstormSessions.Core.Model.BrainstormSession
+2022-05-10 20:06:06.669 +05:00 [INF] Index action is making response
+2022-05-10 20:06:09.181 +05:00 [INF] Index action is making response
+2022-05-10 20:06:10.385 +05:00 [DBG] Called Index method with parameter id: 2 from SessionController
+2022-05-10 20:06:10.404 +05:00 [DBG] Value of session is BrainstormSessions.Core.Model.BrainstormSession
+2022-05-10 20:08:59.120 +05:00 [INF] Index action is making response
+2022-05-10 20:09:01.279 +05:00 [INF] Index action is making response
+2022-05-10 20:09:02.305 +05:00 [DBG] Called Index method with parameter id: 2 from SessionController
+2022-05-10 20:09:02.325 +05:00 [DBG] Value of session is BrainstormSessions.Core.Model.BrainstormSession
