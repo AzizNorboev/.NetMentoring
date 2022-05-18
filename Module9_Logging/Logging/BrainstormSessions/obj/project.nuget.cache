@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "Ck+NWmQbhmSqK9tchD/IsQxwBihmesY7fZJk4ULnOIJb4cpnnPvQrMhPpvHSHv/23aVupeR8hsqxj9nSfzUXiQ==",
+  "dgSpecHash": "4opR9352rePc6L8e1XDN1LVeFEnPxG3VcftUP2KaCVVlDA5wWtkC7kuxYlJFXDQPLfw4VTTOC1/20FReymiKVQ==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Aziz_Norboev\\Documents\\GitHub\\.NetMentoring\\Module10_Logging\\Logging\\BrainstormSessions\\BrainstormSessions.csproj",
+  "projectFilePath": "C:\\Users\\Aziz_Norboev\\Documents\\GitHub\\.NetMentoring\\Module9_Logging\\Logging\\BrainstormSessions\\BrainstormSessions.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Aziz_Norboev\\.nuget\\packages\\mailkit\\2.6.0\\mailkit.2.6.0.nupkg.sha512",
     "C:\\Users\\Aziz_Norboev\\.nuget\\packages\\microsoft.aspnetcore.hosting.abstractions\\2.2.0\\microsoft.aspnetcore.hosting.abstractions.2.2.0.nupkg.sha512",
