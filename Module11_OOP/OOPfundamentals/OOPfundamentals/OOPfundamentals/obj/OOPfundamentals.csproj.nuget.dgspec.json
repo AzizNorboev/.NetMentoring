@@ -1,0 +1,150 @@
+{
+  "format": 1,
+  "restore": {
+    "C:\\Users\\Aziz_Norboev\\Documents\\GitHub\\.NetMentoring\\Module11_OOP\\OOPfundamentals\\OOPfundamentals\\OOPfundamentals\\OOPfundamentals.csproj": {}
+  },
+  "projects": {
+    "C:\\Users\\Aziz_Norboev\\Documents\\GitHub\\.NetMentoring\\Module11_OOP\\OOPfundamentals\\OOPfundamentals\\OOPfundamentals\\OOPfundamentals.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\Aziz_Norboev\\Documents\\GitHub\\.NetMentoring\\Module11_OOP\\OOPfundamentals\\OOPfundamentals\\OOPfundamentals\\OOPfundamentals.csproj",
+        "projectName": "OOPfundamentals",
+        "projectPath": "C:\\Users\\Aziz_Norboev\\Documents\\GitHub\\.NetMentoring\\Module11_OOP\\OOPfundamentals\\OOPfundamentals\\OOPfundamentals\\OOPfundamentals.csproj",
+        "packagesPath": "C:\\Users\\Aziz_Norboev\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Aziz_Norboev\\Documents\\GitHub\\.NetMentoring\\Module11_OOP\\OOPfundamentals\\OOPfundamentals\\OOPfundamentals\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\Aziz_Norboev\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net5.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net5.0": {
+            "targetAlias": "net5.0",
+            "projectReferences": {
+              "C:\\Users\\Aziz_Norboev\\Documents\\GitHub\\.NetMentoring\\Module11_OOP\\OOPfundamentals\\OOPfundamentals\\SerializerJson\\SerializerJson.csproj": {
+                "projectPath": "C:\\Users\\Aziz_Norboev\\Documents\\GitHub\\.NetMentoring\\Module11_OOP\\OOPfundamentals\\OOPfundamentals\\SerializerJson\\SerializerJson.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net5.0": {
+          "targetAlias": "net5.0",
+          "dependencies": {
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[5.0.1, )"
+            },
+            "Microsoft.EntityFrameworkCore.Design": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[5.0.1, )"
+            },
+            "Microsoft.EntityFrameworkCore.SqlServer": {
+              "target": "Package",
+              "version": "[5.0.1, )"
+            },
+            "System.Data.SqlClient": {
+              "target": "Package",
+              "version": "[4.8.3, )"
+            },
+            "System.Runtime.Caching": {
+              "target": "Package",
+              "version": "[6.0.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.105\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\Aziz_Norboev\\Documents\\GitHub\\.NetMentoring\\Module11_OOP\\OOPfundamentals\\OOPfundamentals\\SerializerJson\\SerializerJson.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\Aziz_Norboev\\Documents\\GitHub\\.NetMentoring\\Module11_OOP\\OOPfundamentals\\OOPfundamentals\\SerializerJson\\SerializerJson.csproj",
+        "projectName": "SerializerJson",
+        "projectPath": "C:\\Users\\Aziz_Norboev\\Documents\\GitHub\\.NetMentoring\\Module11_OOP\\OOPfundamentals\\OOPfundamentals\\SerializerJson\\SerializerJson.csproj",
+        "packagesPath": "C:\\Users\\Aziz_Norboev\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Aziz_Norboev\\Documents\\GitHub\\.NetMentoring\\Module11_OOP\\OOPfundamentals\\OOPfundamentals\\SerializerJson\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\Aziz_Norboev\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net5.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net5.0": {
+            "targetAlias": "net5.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net5.0": {
+          "targetAlias": "net5.0",
+          "dependencies": {
+            "Newtonsoft.Json": {
+              "target": "Package",
+              "version": "[13.0.1, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.105\\RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}
