@@ -1,0 +1,16 @@
+C:\Users\Aziz_Norboev\Documents\GitHub\.NetMentoring\Module10_Serialization\Task1\XMLSerialization\obj\Debug\net5.0\XMLSerialization.csproj.AssemblyReference.cache
+C:\Users\Aziz_Norboev\Documents\GitHub\.NetMentoring\Module10_Serialization\Task1\XMLSerialization\obj\Debug\net5.0\XMLSerialization.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Aziz_Norboev\Documents\GitHub\.NetMentoring\Module10_Serialization\Task1\XMLSerialization\obj\Debug\net5.0\XMLSerialization.AssemblyInfoInputs.cache
+C:\Users\Aziz_Norboev\Documents\GitHub\.NetMentoring\Module10_Serialization\Task1\XMLSerialization\obj\Debug\net5.0\XMLSerialization.AssemblyInfo.cs
+C:\Users\Aziz_Norboev\Documents\GitHub\.NetMentoring\Module10_Serialization\Task1\XMLSerialization\obj\Debug\net5.0\XMLSerialization.csproj.CoreCompileInputs.cache
+C:\Users\Aziz_Norboev\Documents\GitHub\.NetMentoring\Module10_Serialization\Task1\XMLSerialization\bin\Debug\net5.0\XMLSerialization.exe
+C:\Users\Aziz_Norboev\Documents\GitHub\.NetMentoring\Module10_Serialization\Task1\XMLSerialization\bin\Debug\net5.0\XMLSerialization.deps.json
+C:\Users\Aziz_Norboev\Documents\GitHub\.NetMentoring\Module10_Serialization\Task1\XMLSerialization\bin\Debug\net5.0\XMLSerialization.runtimeconfig.json
+C:\Users\Aziz_Norboev\Documents\GitHub\.NetMentoring\Module10_Serialization\Task1\XMLSerialization\bin\Debug\net5.0\XMLSerialization.runtimeconfig.dev.json
+C:\Users\Aziz_Norboev\Documents\GitHub\.NetMentoring\Module10_Serialization\Task1\XMLSerialization\bin\Debug\net5.0\XMLSerialization.dll
+C:\Users\Aziz_Norboev\Documents\GitHub\.NetMentoring\Module10_Serialization\Task1\XMLSerialization\bin\Debug\net5.0\ref\XMLSerialization.dll
+C:\Users\Aziz_Norboev\Documents\GitHub\.NetMentoring\Module10_Serialization\Task1\XMLSerialization\bin\Debug\net5.0\XMLSerialization.pdb
+C:\Users\Aziz_Norboev\Documents\GitHub\.NetMentoring\Module10_Serialization\Task1\XMLSerialization\obj\Debug\net5.0\XMLSerialization.dll
+C:\Users\Aziz_Norboev\Documents\GitHub\.NetMentoring\Module10_Serialization\Task1\XMLSerialization\obj\Debug\net5.0\ref\XMLSerialization.dll
+C:\Users\Aziz_Norboev\Documents\GitHub\.NetMentoring\Module10_Serialization\Task1\XMLSerialization\obj\Debug\net5.0\XMLSerialization.pdb
+C:\Users\Aziz_Norboev\Documents\GitHub\.NetMentoring\Module10_Serialization\Task1\XMLSerialization\obj\Debug\net5.0\XMLSerialization.genruntimeconfig.cache

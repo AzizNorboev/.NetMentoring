@@ -5306,11 +5306,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Aziz_Norboev\\Documents\\GitHub\\.NetMentoring\\Module10_Logging\\Logging\\BrainstormSessions\\BrainstormSessions.csproj",
+      "projectUniqueName": "C:\\Users\\Aziz_Norboev\\Documents\\GitHub\\.NetMentoring\\Module9_Logging\\Logging\\BrainstormSessions\\BrainstormSessions.csproj",
       "projectName": "BrainstormSessions",
-      "projectPath": "C:\\Users\\Aziz_Norboev\\Documents\\GitHub\\.NetMentoring\\Module10_Logging\\Logging\\BrainstormSessions\\BrainstormSessions.csproj",
+      "projectPath": "C:\\Users\\Aziz_Norboev\\Documents\\GitHub\\.NetMentoring\\Module9_Logging\\Logging\\BrainstormSessions\\BrainstormSessions.csproj",
       "packagesPath": "C:\\Users\\Aziz_Norboev\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Aziz_Norboev\\Documents\\GitHub\\.NetMentoring\\Module10_Logging\\Logging\\BrainstormSessions\\obj\\",
+      "outputPath": "C:\\Users\\Aziz_Norboev\\Documents\\GitHub\\.NetMentoring\\Module9_Logging\\Logging\\BrainstormSessions\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\Aziz_Norboev\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -5404,7 +5404,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.104\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.105\\RuntimeIdentifierGraph.json"
       }
     }
   }

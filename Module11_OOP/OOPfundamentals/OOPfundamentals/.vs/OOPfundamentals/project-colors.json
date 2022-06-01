@@ -1,0 +1,21 @@
+{
+  "Version": 1,
+  "ProjectMap": {
+    "667421cc-8dd1-43c8-bc15-1427a0398794": {
+      "ProjectGuid": "667421cc-8dd1-43c8-bc15-1427a0398794",
+      "DisplayName": "OOPfundamentals",
+      "ColorIndex": 0
+    },
+    "6be369f7-4da0-48fb-8074-bd3df7d1e9d3": {
+      "ProjectGuid": "6be369f7-4da0-48fb-8074-bd3df7d1e9d3",
+      "DisplayName": "Serializator",
+      "ColorIndex": 1
+    },
+    "07e48f20-cb36-4f15-8470-dd58866db42e": {
+      "ProjectGuid": "07e48f20-cb36-4f15-8470-dd58866db42e",
+      "DisplayName": "SerializerJson",
+      "ColorIndex": 2
+    }
+  },
+  "NextColorIndex": 3
+}
