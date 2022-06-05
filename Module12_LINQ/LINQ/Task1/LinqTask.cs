@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Linq;
 using Task1.DoNotChange;
 
 namespace Task1
@@ -8,7 +9,12 @@ namespace Task1
     {
         public static IEnumerable<Customer> Linq1(IEnumerable<Customer> customers, decimal limit)
         {
-            throw new NotImplementedException();
+            if (customers == null)
+            {
+                throw new ArgumentNullException(nameof(customers));
+            }
+
+            return customers.Where(c => c.Orders.Sum(o => o.Total) > limit);
         }
 
         public static IEnumerable<(Customer customer, IEnumerable<Supplier> suppliers)> Linq2(
@@ -16,7 +22,15 @@ namespace Task1
             IEnumerable<Supplier> suppliers
         )
         {
-            throw new NotImplementedException();
+            if (customers == null || suppliers == null)
+            {
+                throw new ArgumentNullException();
+            }
+
+            return customers.Select(
+                c => (
+                    customer: c,
+                    suppliers: suppliers.Where(s => s.Country == c.Country && s.City == c.City)));
         }
 
         public static IEnumerable<(Customer customer, IEnumerable<Supplier> suppliers)> Linq2UsingGroup(
@@ -24,31 +38,82 @@ namespace Task1
             IEnumerable<Supplier> suppliers
         )
         {
-            throw new NotImplementedException();
+            if (customers is null || suppliers is null)
+                throw new ArgumentNullException();
+
+
+            var result = customers.Select(
+                customer => (
+                    customer: customer,
+                    suppliers: suppliers.Where(supplier =>
+                        supplier.Country == customer.Country
+                            && supplier.City == customer.City)));
+
+            return result;
         }
 
         public static IEnumerable<Customer> Linq3(IEnumerable<Customer> customers, decimal limit)
         {
-            throw new NotImplementedException();
+            if (customers == null)
+            {
+                throw new ArgumentNullException(nameof(customers));
+            }
+
+            var result = customers.Where(c => c.Orders.Length > 0 && c.Orders.Sum(o => o.Total) > limit);
+            if(limit > 799)
+            {
+                int count = 0;
+                foreach (var item in result)
+                {
+                    count++;
+                }
+                Console.WriteLine(count);
+            }
+           
+            return result;
         }
 
         public static IEnumerable<(Customer customer, DateTime dateOfEntry)> Linq4(
             IEnumerable<Customer> customers
         )
         {
-            throw new NotImplementedException();
+            if (customers == null)
+            {
+                throw new ArgumentNullException(nameof(customers));
+            }
+
+            return customers.Where(c => c.Orders.Count() > 0)
+                            .Select(customer => (
+                                    customer: customer,
+                                    dateOfEntry: customer.Orders.OrderBy(order => order.OrderDate).First().OrderDate));
         }
 
         public static IEnumerable<(Customer customer, DateTime dateOfEntry)> Linq5(
             IEnumerable<Customer> customers
         )
         {
-            throw new NotImplementedException();
+            if (customers == null)
+            {
+                throw new ArgumentNullException(nameof(customers));
+            }
+
+            var result = Linq4(customers);
+
+            return result.OrderBy(item => item.dateOfEntry.Year)
+                         .ThenBy(item => item.dateOfEntry.Month)
+                         .ThenByDescending(item => item.customer.Orders.Sum(order => order.Total))
+                         .ThenBy(item => item.customer.CompanyName);
         }
 
         public static IEnumerable<Customer> Linq6(IEnumerable<Customer> customers)
         {
-            throw new NotImplementedException();
+            if (customers == null)
+            {
+                throw new ArgumentNullException(nameof(customers));
+            }
+
+            return customers.Where(c => c.PostalCode.Any(character => char.IsLetter(character))
+                                         || String.IsNullOrEmpty(c.Region) || !c.Phone.Contains('('));
         }
 
         public static IEnumerable<Linq7CategoryGroup> Linq7(IEnumerable<Product> products)
@@ -63,8 +128,26 @@ namespace Task1
 		            price - 18.0000
 		            price - 19.0000
              */
+            if (products == null)
+            {
+                throw new ArgumentNullException(nameof(products));
+            }
 
-            throw new NotImplementedException();
+            var groupedProductsByCategory = products.GroupBy(product => product.Category);
+
+            return groupedProductsByCategory.Select(group =>
+                new Linq7CategoryGroup
+                {
+                    Category = group.Key,
+                    UnitsInStockGroup =
+                        group.GroupBy(product => product.UnitsInStock)
+                            .Select(unit => new Linq7UnitsInStockGroup
+                            {
+                                UnitsInStock = unit.Key,
+                                Prices = unit.OrderBy(product => product.UnitPrice)
+                                             .Select(product => product.UnitPrice)
+                            })
+                });
         }
 
         public static IEnumerable<(decimal category, IEnumerable<Product> products)> Linq8(
@@ -74,19 +157,50 @@ namespace Task1
             decimal expensive
         )
         {
-            throw new NotImplementedException();
+            if (products == null)
+            {
+                throw new ArgumentNullException(nameof(products));
+            }
+
+            var result = products.Select(
+               product => (
+                   category: product.UnitPrice,
+                   products: products.Where(pr => pr.UnitPrice <= product.UnitPrice)));
+
+            return result;
         }
 
         public static IEnumerable<(string city, int averageIncome, int averageIntensity)> Linq9(
             IEnumerable<Customer> customers
         )
         {
-            throw new NotImplementedException();
+            if (customers == null)
+            {
+                throw new ArgumentNullException(nameof(customers));
+            }
+
+            var groupedCustomersByCity = customers.GroupBy(customer => customer.City);
+
+            return groupedCustomersByCity.Select(group => (
+                city: group.Key,
+                avarageIncome: (int)Math.Round(group.Average(cutomer => cutomer.Orders.Sum(order => order.Total))),
+                averageIntensity: (int)Math.Round(group.Average(cutomer => cutomer.Orders.Count()))
+            ));
         }
 
         public static string Linq10(IEnumerable<Supplier> suppliers)
         {
-            throw new NotImplementedException();
+            if (suppliers == null)
+            {
+                throw new ArgumentNullException(nameof(suppliers));
+            }
+
+            return String.Join(
+                separator: "",
+                values: suppliers.Select(supplier => supplier.Country)
+                                 .OrderBy(country => country.Length)
+                                 .ThenBy(country => country)
+                                 .Distinct());
         }
     }
 }
