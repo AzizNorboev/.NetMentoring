@@ -1,7 +1,6 @@
 C:\Users\Aziz_Norboev\Documents\GitHub\.NetMentoring\Module12_LINQ\LINQ\Task1\bin\Debug\netcoreapp3.1\Task1.deps.json
 C:\Users\Aziz_Norboev\Documents\GitHub\.NetMentoring\Module12_LINQ\LINQ\Task1\bin\Debug\netcoreapp3.1\Task1.dll
 C:\Users\Aziz_Norboev\Documents\GitHub\.NetMentoring\Module12_LINQ\LINQ\Task1\bin\Debug\netcoreapp3.1\Task1.pdb
-C:\Users\Aziz_Norboev\Documents\GitHub\.NetMentoring\Module12_LINQ\LINQ\Task1\obj\Debug\netcoreapp3.1\Task1.csproj.AssemblyReference.cache
 C:\Users\Aziz_Norboev\Documents\GitHub\.NetMentoring\Module12_LINQ\LINQ\Task1\obj\Debug\netcoreapp3.1\Task1.GeneratedMSBuildEditorConfig.editorconfig
 C:\Users\Aziz_Norboev\Documents\GitHub\.NetMentoring\Module12_LINQ\LINQ\Task1\obj\Debug\netcoreapp3.1\Task1.AssemblyInfoInputs.cache
 C:\Users\Aziz_Norboev\Documents\GitHub\.NetMentoring\Module12_LINQ\LINQ\Task1\obj\Debug\netcoreapp3.1\Task1.AssemblyInfo.cs

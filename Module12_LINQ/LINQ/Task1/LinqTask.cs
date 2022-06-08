@@ -149,23 +149,35 @@ namespace Task1
                             })
                 });
         }
+        //incorrect
+        //public static IEnumerable<(decimal category, IEnumerable<Product> products)> Linq8(
+        //    IEnumerable<Product> products,
+        //    decimal cheap,
+        //    decimal middle,
+        //    decimal expensive
+        //)
+        //{
 
+        //    var result = products.Select(
+        //       product => (
+        //           category: product.UnitPrice,
+        //           products: products.Where(pr => pr.UnitPrice <= product.UnitPrice)));
+
+        //    return result;
+        //}
         public static IEnumerable<(decimal category, IEnumerable<Product> products)> Linq8(
-            IEnumerable<Product> products,
-            decimal cheap,
-            decimal middle,
-            decimal expensive
-        )
+                IEnumerable<Product> products,
+                decimal cheap,
+                decimal middle,
+                decimal expensive
+                )
         {
-            if (products == null)
-            {
-                throw new ArgumentNullException(nameof(products));
-            }
-
-            var result = products.Select(
-               product => (
-                   category: product.UnitPrice,
-                   products: products.Where(pr => pr.UnitPrice <= product.UnitPrice)));
+                var result = new List<(decimal categpry, IEnumerable<Product> products)>
+                {
+                     (cheap, products.Where(x => x.UnitPrice <= cheap)),
+                     (middle, products.Where(x => x.UnitPrice > cheap && x.UnitPrice <= middle)),
+                     (expensive, products.Where(x => x.UnitPrice >= expensive))
+                };
 
             return result;
         }
