@@ -38,7 +38,6 @@ namespace AdoNetFundamentals.Repositories
                 paramName.Value = name;
                 paramDescription.Value = description;
                 command.ExecuteNonQuery();
-                Console.WriteLine("successfully inserted data to Products table: ");
             }
         }
 

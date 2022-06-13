@@ -33,6 +33,8 @@ namespace AdoNetFundamentals.Repositories
                 string commandText = $"insert into Orders (CreatedDate, UpdatedDate, Status, ProductID) " +
                     $"                  values('{createdDate}', '{updatedDate}', '{status}', {productId})";
                 SqlCommand command = new SqlCommand(commandText, connection);
+                SqlParameter paramStatus = command.Parameters.Add("@Status", SqlDbType.NVarChar);
+                paramStatus.Value = status;
                 command.ExecuteNonQuery();
             }
         }
@@ -44,6 +46,10 @@ namespace AdoNetFundamentals.Repositories
                 connection.Open();
                 string commandText = $"update Orders set {columnName} = '{value}' where ID = {id}";
                 SqlCommand command = new SqlCommand(commandText, connection);
+                SqlParameter paramColumnName = command.Parameters.Add("@ColumnName", SqlDbType.NVarChar);
+                SqlParameter paramValue = command.Parameters.Add("@Value", SqlDbType.NVarChar);
+                paramColumnName.Value = columnName;
+                paramValue.Value = value;
                 command.ExecuteNonQuery();
             }
         }
