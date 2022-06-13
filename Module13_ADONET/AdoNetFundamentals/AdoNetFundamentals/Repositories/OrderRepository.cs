@@ -82,11 +82,11 @@ namespace AdoNetFundamentals.Repositories
         {
             using (SqlConnection connection = new SqlConnection(SeedExtension.GetConnectionString()))
             {
-                connection.Open();               
-
+                connection.Open();
+                SqlTransaction transaction = connection.BeginTransaction();
                 foreach (int id in ids)
                 {
-                    SqlTransaction transaction = connection.BeginTransaction();
+
                     try
                     {                        
                         string commandText = $"delete Orders where ID = {id}";

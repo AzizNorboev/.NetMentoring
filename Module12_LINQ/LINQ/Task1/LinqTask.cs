@@ -47,7 +47,7 @@ namespace Task1
                     customer: customer,
                     suppliers: suppliers.Where(supplier =>
                         supplier.Country == customer.Country
-                            && supplier.City == customer.City)));
+                            && supplier.City == customer.City).GroupBy(x => x.SupplierName).SelectMany(gr => gr)));
 
             return result;
         }

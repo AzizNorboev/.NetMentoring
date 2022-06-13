@@ -7,3 +7,4 @@ C:\Users\Aziz_Norboev\Documents\GitHub\.NetMentoring\Module12_LINQ\LINQ\Task1\ob
 C:\Users\Aziz_Norboev\Documents\GitHub\.NetMentoring\Module12_LINQ\LINQ\Task1\obj\Debug\netcoreapp3.1\Task1.csproj.CoreCompileInputs.cache
 C:\Users\Aziz_Norboev\Documents\GitHub\.NetMentoring\Module12_LINQ\LINQ\Task1\obj\Debug\netcoreapp3.1\Task1.dll
 C:\Users\Aziz_Norboev\Documents\GitHub\.NetMentoring\Module12_LINQ\LINQ\Task1\obj\Debug\netcoreapp3.1\Task1.pdb
+C:\Users\Aziz_Norboev\Documents\GitHub\.NetMentoring\Module12_LINQ\LINQ\Task1\obj\Debug\netcoreapp3.1\Task1.csproj.AssemblyReference.cache
