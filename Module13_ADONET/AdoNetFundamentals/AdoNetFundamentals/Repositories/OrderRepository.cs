@@ -21,20 +21,6 @@ namespace AdoNetFundamentals.Repositories
 
                 var orders = new List<Order>();
 
-                if (data.HasRows)
-                {
-                    Console.WriteLine($"{data.GetName(1)} \t | \t {data.GetName(2)} \t | \t {data.GetName(3)} \t | \t {data.GetName(4)}");
-
-                    while (data.Read())
-                    {
-                        var status = Enum.GetValues(typeof(Status)).Cast<Status>().SingleOrDefault(x => x.ToString() == data.GetValue(3).ToString());
-
-                        Console.WriteLine($"{data.GetValue(1)} \t | \t {data.GetValue(2)} \t | \t {data.GetValue(3)}  \t | \t {data.GetValue(4)}");
-                        var order = new Order(Convert.ToDateTime(data.GetValue(1)), Convert.ToDateTime(data.GetValue(2)), status, Convert.ToInt32(data.GetValue(4)));
-                        orders.Add(order);
-                    }
-                }
-
                 return orders;
             }
         }
@@ -48,7 +34,6 @@ namespace AdoNetFundamentals.Repositories
                     $"                  values('{createdDate}', '{updatedDate}', '{status}', {productId})";
                 SqlCommand command = new SqlCommand(commandText, connection);
                 command.ExecuteNonQuery();
-                Console.WriteLine("successfully inserted data to Orderd table: ");
             }
         }
 
@@ -60,8 +45,6 @@ namespace AdoNetFundamentals.Repositories
                 string commandText = $"update Orders set {columnName} = '{value}' where ID = {id}";
                 SqlCommand command = new SqlCommand(commandText, connection);
                 command.ExecuteNonQuery();
-
-                Console.WriteLine("Orders table successfully updated");
             }
         }
 
@@ -73,8 +56,6 @@ namespace AdoNetFundamentals.Repositories
                 string commandText = $"delete Orders where ID = {id}";
                 SqlCommand command = new SqlCommand(commandText, connection);
                 command.ExecuteNonQuery();
-
-                Console.WriteLine("Order successfully deleted");
             }
         }
 
@@ -86,7 +67,6 @@ namespace AdoNetFundamentals.Repositories
                 SqlTransaction transaction = connection.BeginTransaction();
                 foreach (int id in ids)
                 {
-
                     try
                     {                        
                         string commandText = $"delete Orders where ID = {id}";
@@ -94,7 +74,10 @@ namespace AdoNetFundamentals.Repositories
                         command.Transaction = transaction;
                         command.ExecuteNonQuery();
                         transaction.Commit();
-                        Console.WriteLine("Successfully deleted");
+                    }
+                    catch (InvalidOperationException ex)
+                    {
+                        Console.WriteLine(ex.Message);
                     }
                     catch (Exception ex)
                     {
@@ -121,20 +104,6 @@ namespace AdoNetFundamentals.Repositories
                 SqlDataReader data = command.ExecuteReader();
                 var orders = new List<Order>();
 
-                if (data.HasRows)
-                {
-                    Console.WriteLine($"{data.GetName(1)} \t | \t {data.GetName(2)} \t | \t {data.GetName(3)} \t | \t {data.GetName(4)}");
-
-                    while (data.Read())
-                    {
-                        var status = Enum.GetValues(typeof(Status)).Cast<Status>().SingleOrDefault(x => x.ToString() == data.GetValue(3).ToString());
-
-                        Console.WriteLine($"{data.GetValue(1)} \t | \t {data.GetValue(2)} \t | \t {data.GetValue(3)}  \t | \t {data.GetValue(4)}");
-                        var order = new Order(Convert.ToDateTime(data.GetValue(1)), Convert.ToDateTime(data.GetValue(2)), status, Convert.ToInt32(data.GetValue(4)));
-                        orders.Add(order);
-                    }
-                }
-
                 return orders;
             }
         }
@@ -155,20 +124,6 @@ namespace AdoNetFundamentals.Repositories
                 SqlDataReader data = command.ExecuteReader();
 
                 var orders = new List<Order>();
-
-                if (data.HasRows)
-                {
-                    Console.WriteLine($"{data.GetName(1)} \t | \t {data.GetName(2)} \t | \t {data.GetName(3)} \t | \t {data.GetName(4)}");
-
-                    while (data.Read())
-                    {
-                        var status = Enum.GetValues(typeof(Status)).Cast<Status>().SingleOrDefault(x => x.ToString() == data.GetValue(3).ToString());
-
-                        Console.WriteLine($"{data.GetValue(1)} \t | \t {data.GetValue(2)} \t | \t {data.GetValue(3)}  \t | \t {data.GetValue(4)}");
-                        var order = new Order(Convert.ToDateTime(data.GetValue(1)), Convert.ToDateTime(data.GetValue(2)), status, Convert.ToInt32(data.GetValue(4)));
-                        orders.Add(order);
-                    }
-                }
 
                 return orders;
             }

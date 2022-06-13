@@ -21,18 +21,6 @@ namespace AdoNetFundamentals.Repositories
 
                 var products = new List<Product>();
 
-                if (data.HasRows)
-                {
-                    Console.WriteLine($"{data.GetName(0)} \t | \t {data.GetName(1)} \t | \t {data.GetName(2)} \t | \t {data.GetName(3)}  \t | \t {data.GetName(4)} \t | \t {data.GetName(5)}");
-
-                    while (data.Read())
-                    {
-                        Console.WriteLine($"{data.GetValue(0)} \t | \t {data.GetValue(1)}  \t | \t {data.GetValue(2)}  \t | \t {data.GetValue(3)}  \t | \t {data.GetValue(4)}  \t | \t {data.GetValue(5)}");
-                        var product = new Product(data.GetValue(0).ToString(), data.GetValue(1).ToString(), Convert.ToSingle(data.GetValue(2)), Convert.ToSingle(data.GetValue(3)), Convert.ToSingle(data.GetValue(4)), Convert.ToSingle(data.GetValue(5)));
-                        products.Add(product);
-                    }
-                }
-
                 return products;
             }
         }
@@ -45,6 +33,10 @@ namespace AdoNetFundamentals.Repositories
                 string commandText = $"insert into Products(Name, Description, Weight, Height, Width, Length) " +
                                         $"values('{name}', '{description}', {weight}, {height}, {width}, {length})";
                 SqlCommand command = new SqlCommand(commandText, connection);
+                SqlParameter paramName = command.Parameters.Add("@Name", SqlDbType.NVarChar);
+                SqlParameter paramDescription = command.Parameters.Add("@Description", SqlDbType.NVarChar);
+                paramName.Value = name;
+                paramDescription.Value = description;
                 command.ExecuteNonQuery();
                 Console.WriteLine("successfully inserted data to Products table: ");
             }
@@ -57,8 +49,11 @@ namespace AdoNetFundamentals.Repositories
                 connection.Open();
                 string commandText = $"update Products set {columnName} = '{value}' where ID = {id}";
                 SqlCommand command = new SqlCommand(commandText, connection);
+                SqlParameter paramColumnName = command.Parameters.Add("@ColumnName", SqlDbType.NVarChar);
+                SqlParameter paramValue = command.Parameters.Add("@Value", SqlDbType.NVarChar);
+                paramColumnName.Value = columnName;
+                paramValue.Value = value;
                 command.ExecuteNonQuery();
-                Console.WriteLine("Products table successfully updated");
             }
         }
 
@@ -70,8 +65,6 @@ namespace AdoNetFundamentals.Repositories
                 string commandText = $"delete Products where ID = {id}";
                 SqlCommand command = new SqlCommand(commandText, connection);
                 command.ExecuteNonQuery();
-
-                Console.WriteLine("Product successfully deleted");
             }
         }
 
@@ -89,17 +82,6 @@ namespace AdoNetFundamentals.Repositories
 
                 SqlDataReader data = command.ExecuteReader();
                 Product product = null;
-
-                if (data.HasRows)
-                {
-                    Console.WriteLine($"{data.GetName(0)} \t | \t {data.GetName(1)} \t | \t {data.GetName(2)} \t | \t {data.GetName(3)}  \t | \t {data.GetName(4)} \t | \t {data.GetName(5)}");
-
-                    while (data.Read())
-                    {
-                        Console.WriteLine($"{data.GetValue(0)} \t | \t {data.GetValue(1)}  \t | \t {data.GetValue(2)}  \t | \t {data.GetValue(3)}  \t | \t {data.GetValue(4)}  \t | \t {data.GetValue(5)}");
-                        product = new Product(data.GetValue(0).ToString(), data.GetValue(1).ToString(), Convert.ToSingle(data.GetValue(2)), Convert.ToSingle(data.GetValue(3)), Convert.ToSingle(data.GetValue(4)), Convert.ToSingle(data.GetValue(5)));
-                    }
-                }
 
                 return product;
             }
