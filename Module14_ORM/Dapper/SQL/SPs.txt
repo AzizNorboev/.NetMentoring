@@ -1,0 +1,16 @@
+CREATE PROCEDURE SP_DeleteOrdersById
+@Id int = NULL
+AS
+ Delete from Orders where Id=@Id;
+
+
+Create PROCEDURE [dbo].[SP_GetOrderByCreatedDateMonth]
+@Month nvarchar(100) = NULL
+AS
+ select * from Orders where MONTH(CreatedDate)=@Month;
+
+
+Create PROCEDURE [dbo].[SP_GetOrderByStatus]
+@Status nvarchar(100) = NULL
+AS
+ select * from Orders where Status=@Status;

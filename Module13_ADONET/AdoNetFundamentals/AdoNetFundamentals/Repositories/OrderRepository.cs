@@ -79,7 +79,10 @@ namespace AdoNetFundamentals.Repositories
                         SqlCommand command = new SqlCommand(commandText, connection);
                         command.Transaction = transaction;
                         command.ExecuteNonQuery();
-                        transaction.Commit();
+                        if(transaction.Connection != null)
+                        {
+                            transaction.Commit();
+                        }                        
                     }
                     catch (InvalidOperationException ex)
                     {

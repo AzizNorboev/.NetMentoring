@@ -37,8 +37,8 @@ namespace AdoNetConsole.Controllers
         {
             Console.WriteLine("Deleting orders by Ids");
             List<int> ids = new();
-            ids.Add(1006);
-            ids.Add(1007);
+            ids.Add(1012);
+            ids.Add(1013);
             orderRepository.BulkDeleteOrderById(ids);
             Console.WriteLine();
         }
