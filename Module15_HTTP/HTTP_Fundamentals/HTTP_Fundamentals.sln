@@ -7,14 +7,6 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Client", "Client\Client.csp
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Listener", "Listener\Listener.csproj", "{E7BFAA11-53E4-4BD7-9269-BE1075F7607F}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Results", "Results", "{BC349106-9358-48F9-B3D9-08A51FA7C592}"
-	ProjectSection(SolutionItems) = preProject
-		Results\Task1.png = Results\Task1.png
-		Results\Task2.png = Results\Task2.png
-		Results\Task3.png = Results\Task3.png
-		Results\Task4.png = Results\Task4.png
-	EndProjectSection
-EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
