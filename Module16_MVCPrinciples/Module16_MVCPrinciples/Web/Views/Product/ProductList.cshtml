@@ -1,0 +1,93 @@
+﻿@using Models
+@*@model ReflectionIT.Mvc.Paging.PagingList<Product>
+@using ReflectionIT.Mvc.Paging
+@addTagHelper *,ReflectionIT.Mvc.Paging*@
+
+@model List<Product>
+
+
+@section Scripts{
+    <script src="~/js/product.js"></script>
+}
+
+<style>
+    li{
+        margin: 0 10px;
+    }
+</style>
+
+<h1 class="forFlexDisplay">Product Page</h1>
+
+
+<div class="container mb-5">
+
+   
+    @if (ViewBag.Message != null)
+    {
+        <script type="text/javascript">
+            window.onload = function () {
+                alert("@ViewBag.Message");
+            };
+        </script>
+    }
+
+   <a class="btn btn-primary" asp-controller="Product" asp-action="AddNewProduct">Add New Product</a>
+
+    <table border="1" class="table">
+        <thead>
+            <tr>
+                @*<th scope="col">ID</th>*@
+                <th scope="col">Name</th>
+                <th scope="col">Quantity Per Unit</th>
+                <th scope="col">Unit Price</th>
+                <th scope="col">Units In Stock</th>
+                <th scope="col">Units On Order</th>
+                <th scope="col">Reorder Level</th>
+                <th scope="col">Discontinued</th>
+                <th scope="col">Category</th>
+            </tr>
+        </thead>
+
+        <tbody>
+            @if (Model != null)
+            {
+                @foreach (var item in Model)
+                {
+                    <tr class="productLine">
+
+                     @*   <td>
+                            @Html.ActionLink(@item.ProductID, "UpdateProduct", "Product", new { productId = item.ProductID })
+                        </td>*@
+                        <td>@item.ProductName</td>
+                        <td>@item.QuantityPerUnit</td>
+                        <td>@item.UnitPrice</td>
+                        <td>@item.UnitsInStock</td>
+                        <td>@item.UnitsOnOrder</td>
+                        <td>@item.ReorderLevel</td>
+                        <td>@item.Discontinued</td>
+                        <td>@item.Category.CategoryName</td>
+                         <td>
+                            <button class="btn btn-warning edit">@Html.ActionLink("Update", "Update", "Product", new { productId = item.ProductID })</button>
+                        </td>
+
+                        <td>
+                            <input class="btn btn-danger deleteProduct" data-name="@item.ProductID" type="button" value="Delete" />
+                        </td>
+                    </tr>
+                }
+            }
+
+        </tbody>
+    </table>
+
+
+    <nav aria-label="nav example">
+        @if (this.Model != null)
+        {
+            @await this.Component.InvokeAsync("Pager", new { pagingList = this.Model })
+            //<vc:pager paging-list="@Model" />
+        }
+
+    </nav>
+
+</div>
