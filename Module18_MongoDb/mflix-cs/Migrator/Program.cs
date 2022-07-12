@@ -4,6 +4,7 @@ using System.Collections.Generic;
 using System.Drawing;
 using System.Linq;
 using System.Runtime.Serialization;
+using System.Threading;
 using System.Threading.Tasks;
 using M220N.Models;
 using MongoDB.Bson;
@@ -18,8 +19,8 @@ namespace Migrator
         static IMongoCollection<Movie> _moviesCollection;
 
         // TODO: Update this connection string as needed.
-        static string mongoConnectionString = "";
-        
+        static string mongoConnectionString = "mongodb+srv://AzizMongoDb:AzizMongoDb123@cluster0.gnw0v.mongodb.net/?retryWrites=true&w=majority";
+
         static async Task Main(string[] args)
         {
             Setup();
@@ -30,12 +31,19 @@ namespace Migrator
 
             if (datePipelineResults.Count > 0)
             {
-                BulkWriteResult<Movie> bulkWriteDatesResult = null;
-                // TODO Ticket: Call  _moviesCollection.BulkWriteAsync, passing in the
+                // Ticket: Call  _moviesCollection.BulkWriteAsync, passing in the
                 // datePipelineResults. You will need to use a ReplaceOneModel<Movie>
                 // (https://mongodb.github.io/mongo-csharp-driver/2.12/apidocs/html/T_MongoDB_Driver_ReplaceOneModel_1.htm).
-                //
-                // // bulkWriteDatesResult = await _moviesCollection.BulkWriteAsync(...
+
+                var updates = new List<WriteModel<Movie>>();
+                foreach (var datePipelineResult in datePipelineResults)
+                {
+                    var up = Builders<Movie>.Filter.Eq(x => x.Id, datePipelineResult.Id);
+                    var replace = new ReplaceOneModel<Movie>(up, datePipelineResult);
+                    updates.Add(replace);
+                }
+
+                var bulkWriteDatesResult = await _moviesCollection.BulkWriteAsync(updates, cancellationToken: CancellationToken.None);
 
                 Console.WriteLine($"{bulkWriteDatesResult.ProcessedRequests.Count} records updated.");
             }
@@ -45,12 +53,18 @@ namespace Migrator
 
             if (ratingPipelineResults.Count > 0)
             {
-                BulkWriteResult<Movie> bulkWriteRatingsResult = null;
-                // TODO Ticket: Call  _moviesCollection.BulkWriteAsync, passing in the
+                // Ticket: Call  _moviesCollection.BulkWriteAsync, passing in the
                 // ratingPipelineResults. You will need to use a ReplaceOneModel<Movie>
                 // (https://mongodb.github.io/mongo-csharp-driver/2.12/apidocs/html/T_MongoDB_Driver_ReplaceOneModel_1.htm).
                 //
-                // // bulkWriteRatingsResult = await _moviesCollection.BulkWriteAsync(...
+                var updates = new List<WriteModel<Movie>>();
+                foreach (var ratingPipelineResult in ratingPipelineResults)
+                {
+                    var up = Builders<Movie>.Filter.Eq(x => x.Id, ratingPipelineResult.Id);
+                    var replace = new ReplaceOneModel<Movie>(up, ratingPipelineResult);
+                    updates.Add(replace);
+                }
+                var bulkWriteRatingsResult = await _moviesCollection.BulkWriteAsync(updates);
 
                 Console.WriteLine($"{bulkWriteRatingsResult.ProcessedRequests.Count} records updated.");
             }

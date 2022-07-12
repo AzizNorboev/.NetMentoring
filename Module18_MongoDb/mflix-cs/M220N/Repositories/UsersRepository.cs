@@ -217,7 +217,7 @@ namespace M220N.Repositories
         public async Task<UserResponse> SetUserPreferencesAsync(string email,
             Dictionary<string, string> preferences, CancellationToken cancellationToken = default)
         {
-            try
+           try
             {
                 /**
                   Ticket: User Preferences
@@ -225,23 +225,15 @@ namespace M220N.Repositories
                   Update the "preferences" field in the corresponding user's document to
                   reflect the new information in preferences.
                 */
-
                 UpdateResult updateResult = null;
-                // TODO Ticket: User Preferences
                 // Use the data in "preferences" to update the user's preferences.
-                var filter = Builders<User>.Filter.Eq(u => u.Email, email);
-
-                //how i did
-                //updateResult = await _usersCollection.UpdateOneAsync(filter, 
-                //    Builders<User>.Update.Set(p => p.Preferences, preferences));
-
-                updateResult = await _usersCollection.UpdateOneAsync(
-                   new BsonDocument(),
-                   Builders<User>.Update.Set(p => p.Preferences, preferences),
+                //
+                updateResult = await _usersCollection.UpdateOneAsync(u => u.Email == email,
+                   Builders<User>.Update.Set(u => u.Preferences, preferences),
                    /* Be sure to pass a new UpdateOptions object here,
                       setting IsUpsert to false! */
-                   new UpdateOptions(),
-                   cancellationToken);;
+                   new UpdateOptions() { IsUpsert = false },
+                   cancellationToken);
 
                 return updateResult.MatchedCount == 0
                     ? new UserResponse(false, "No user found with that email")

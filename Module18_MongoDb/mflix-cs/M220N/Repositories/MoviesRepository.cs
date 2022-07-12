@@ -104,6 +104,8 @@ namespace M220N.Repositories
                 // Catch the exception and check the exception type and message contents.
                 // Return null if the exception is due to a bad/missing Id. Otherwise,
                 // throw.
+                if (ex.Message.Contains("is not a valid 24 digit hex string."))
+                    return null;
 
                 throw;
             }
@@ -290,7 +292,6 @@ namespace M220N.Repositories
                 skipStage,
                 limitStage,
                 facetStage
-
             };
 
             // I run the pipeline you built

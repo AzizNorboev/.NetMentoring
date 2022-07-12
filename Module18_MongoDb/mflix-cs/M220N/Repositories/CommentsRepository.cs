@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Linq;
 using System.Threading;
 using System.Threading.Tasks;
 using M220N.Models;
@@ -112,26 +113,32 @@ namespace M220N.Repositories
         public async Task<TopCommentsProjection> MostActiveCommentersAsync()
         {
             /**
-                TODO Ticket: User Report
+                
                 Build a pipeline that returns the 20 most frequent commenters on the MFlix
                 site. You can do this by counting the number of occurrences of a user's
                 email in the `comments` collection.
-
                 In addition, set the ReadConcern on the _commentsCollection to
                 ensure the most accurate reads occur.
             */
             try
             {
                 List<ReportProjection> result = null;
-                // TODO Ticket: User Report
                 // Return the 20 users who have commented the most on MFlix. You will need to use
                 // the Group, Sort, Limit, and Project methods of the Aggregation pipeline.
                 //
-                // // result = await _commentsCollection
-                // //   .WithReadConcern(...)
-                // //   .Aggregate()
-                // //   .Group(...)
-                // //   .Sort(...).Limt(...).Project(...).ToListAsync()
+                var group = new BsonDocument { { "$sortByCount", "$email" } };
+                var limit = new BsonDocument("$limit", 20); ;
+
+                var pipeline = new[]
+                {
+                    group,
+                    limit
+                };
+
+                result = await _commentsCollection
+                    .WithReadConcern(new ReadConcern(ReadConcernLevel.Majority))
+                    .Aggregate(PipelineDefinition<Comment, ReportProjection>.Create(pipeline))
+                    .ToListAsync();
 
                 return new TopCommentsProjection(result);
             }
