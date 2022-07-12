@@ -52,9 +52,8 @@ namespace M220N.Repositories
         {
             // TODO Ticket: User Management
             // Retrieve the user document corresponding with the user's email.
-            //
-            // // return await _usersCollection.Find(...)
-            return null;
+
+            return await _usersCollection.Find(u => u.Email == email).FirstOrDefaultAsync();
         }
 
         /// <summary>
@@ -75,13 +74,18 @@ namespace M220N.Repositories
                 // Create a user with the "Name", "Email", and "HashedPassword" fields.
                 // DO NOT STORE CLEAR-TEXT PASSWORDS! Instead, use the helper class
                 // we have created for you: PasswordHashOMatic.Hash(password)
-                //
-                // // user = new User...
-                // // await _usersCollection.InsertOneAsync(...)
+
+                user.Email = email;
+                user.Name = name;
+                user.HashedPassword = PasswordHashOMatic.Hash(password);
+                
+                await _usersCollection.WithWriteConcern(WriteConcern.W2).InsertOneAsync(user);
+
                 //
                 // // TODO Ticket: Durable Writes
                 // // To use a more durable Write Concern for this operation, add the 
                 // // .WithWriteConcern() method to your InsertOneAsync call.
+                
 
                 var newUser = await GetUserAsync(user.Email, cancellationToken);
                 return new UserResponse(newUser);
@@ -124,7 +128,12 @@ namespace M220N.Repositories
                 // Then update the Session.UserId and Session.Jwt properties,
                 // setting the former to the email and the latter to the
                 // user.AuthToken that is passed in from the Controller.
-                // 
+                Session session = new Session();
+                session.UserId = user.Email;
+                session.Jwt = user.AuthToken;
+
+                await _sessionsCollection.InsertOneAsync(session);
+
                 // If the session doesn't exist, allow MongoDB to create a
                 // new one by passing the IsUpsert update option.
                 //  await _sessionsCollection.UpdateOneAsync(
@@ -220,14 +229,19 @@ namespace M220N.Repositories
                 UpdateResult updateResult = null;
                 // TODO Ticket: User Preferences
                 // Use the data in "preferences" to update the user's preferences.
-                //
-                // updateResult = await _usersCollection.UpdateOneAsync(
-                //    new BsonDocument(),
-                //    Builders<User>.Update.Set("TODO", preferences),
-                //    /* Be sure to pass a new UpdateOptions object here,
-                //       setting IsUpsert to false! */
-                //    new UpdateOptions(),
-                //    cancellationToken);
+                var filter = Builders<User>.Filter.Eq(u => u.Email, email);
+
+                //how i did
+                //updateResult = await _usersCollection.UpdateOneAsync(filter, 
+                //    Builders<User>.Update.Set(p => p.Preferences, preferences));
+
+                updateResult = await _usersCollection.UpdateOneAsync(
+                   new BsonDocument(),
+                   Builders<User>.Update.Set(p => p.Preferences, preferences),
+                   /* Be sure to pass a new UpdateOptions object here,
+                      setting IsUpsert to false! */
+                   new UpdateOptions(),
+                   cancellationToken);;
 
                 return updateResult.MatchedCount == 0
                     ? new UserResponse(false, "No user found with that email")

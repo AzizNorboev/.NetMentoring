@@ -87,6 +87,11 @@ namespace M220N.Repositories
             {
                 return await _moviesCollection.Aggregate()
                     .Match(Builders<Movie>.Filter.Eq(x => x.Id, movieId))
+                    .Lookup(                  
+                    _commentsCollection,
+                    m => m.Id,
+                    (Comment c) => c.MovieId,
+                    (Movie m) => m.Comments)
                     // Ticket: Get Comments
                     // Add a lookup stage that includes the
                     // comments associated with the retrieved movie
@@ -265,24 +270,26 @@ namespace M220N.Repositories
                         new BsonArray {cast})));
 
             //I limit the number of results
-            var limitStage = new BsonDocument("$limit", DefaultMoviesPerPage);
+            var limitStage = new BsonDocument("$limit", DefaultMoviesPerPage); //1
 
             //I sort the results by the number of reviewers, descending
             var sortStage = new BsonDocument("$sort",
                 new BsonDocument("tomatoes.viewer.numReviews", -1));
 
             // In conjunction with limitStage, I enable pagination
-            var skipStage = new BsonDocument("$skip", DefaultMoviesPerPage * page);
+            var skipStage = new BsonDocument("$skip", DefaultMoviesPerPage * page); //2
 
             // I build the facets
-            var facetStage = BuildFacetStage();
+            var facetStage = BuildFacetStage();  //3
 
             // I am the pipeline that runs all of the stages
             var pipeline = new[]
             {
                 matchStage,
                 sortStage,
-                // add the remaining stages in the correct order
+                skipStage,
+                limitStage,
+                facetStage
 
             };
 

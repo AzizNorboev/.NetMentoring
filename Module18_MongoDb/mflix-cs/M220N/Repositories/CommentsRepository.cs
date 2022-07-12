@@ -47,9 +47,10 @@ namespace M220N.Repositories
                     MovieId = movieId
                 };
 
-                // Ticket: Add a new Comment
-                // Implement InsertOneAsync() to insert a
-                // new comment into the comments collection.
+                await _commentsCollection.InsertOneAsync(
+                   newComment,
+                   new InsertOneOptions(),
+                   cancellationToken);
 
                 return await _moviesRepository.GetMovieAsync(movieId.ToString(), cancellationToken);
             }
@@ -77,13 +78,12 @@ namespace M220N.Repositories
             // existing comment. Remember that only the original
             // comment owner can update the comment!
             //
-            // // return await _commentsCollection.UpdateOneAsync(
-            // // Builders<Comment>.Filter.Where(...),
-            // // Builders<Comment>.Update.Set(...).Set(...),
-            // // new UpdateOptions { ... } ,
-            // // cancellationToken);
+            return await _commentsCollection.UpdateOneAsync(
+              Builders<Comment>.Filter.Where(c => c.Id == commentId && c.Email == user.Email),
+              Builders<Comment>.Update.Set(c => c.Text, comment).Set(c => c.Date, DateTime.UtcNow),
+              new UpdateOptions { IsUpsert = false },
+              cancellationToken);
 
-            return null;
         }
 
         /// <summary>
@@ -104,7 +104,7 @@ namespace M220N.Repositories
             _commentsCollection.DeleteOne(
                 Builders<Comment>.Filter.Where(
                     c => c.MovieId == movieId
-                         && c.Id == commentId));
+                         && c.Id == commentId && c.Email == user.Email));
 
             return await _moviesRepository.GetMovieAsync(movieId.ToString(), cancellationToken);
         }
