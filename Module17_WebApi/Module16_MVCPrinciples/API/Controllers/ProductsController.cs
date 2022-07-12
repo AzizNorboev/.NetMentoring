@@ -53,6 +53,12 @@ namespace API.Controllers
                 _productService.Create(product);
         }
 
+        [HttpPut]
+        public void Put(Product product)
+        {
+            _productService.Update(product);
+        }
+
         [HttpDelete("{id}")]
         public void Delete(int id)
         {
